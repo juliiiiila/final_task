@@ -8,7 +8,7 @@ class BaseDBSteps(object):
         self.bind = create_engine(db_url)
         self.session = Session(bind=self.bind, autoflush=True, autocommit=True)
 
-
+    @allure.step
     def fetch_all(self, sql, attach_to_report=False):
         if attach_to_report:
             allure.attach(str(sql), 'sql')
