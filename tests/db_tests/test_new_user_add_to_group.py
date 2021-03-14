@@ -2,6 +2,7 @@ import allure
 from pages.django_pages.main_page import MainPage
 from time import sleep
 
+
 @allure.story("Open admin")
 def test_open_admin(browser):
     with allure.step('Open main page'):
