@@ -63,10 +63,10 @@ class PetstoreUser:
         return json_response
 
 
-usr = PetstoreUser()
-usr.create_user()
-usr.user_login()
-usr.get_user_data('julia_g')
-usr.user_logout()
-usr.delete_user('julia_g')
-usr.get_user_data('julia_g')
+# usr = PetstoreUser()
+# usr.create_user()
+# usr.user_login()
+# usr.get_user_data('julia_g')
+# usr.user_logout()
+# usr.delete_user('julia_g')
+# usr.get_user_data('julia_g')
