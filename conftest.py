@@ -22,7 +22,7 @@ def browser():
     chrome_options.add_argument('--no-sandbox')
     chrome_options.add_argument('--headless')
     chrome_options.add_argument('--disable-dev-shm-usage')
-    browser = webdriver.Chrome('/usr/local/bin/chromedriver', chrome_options=chrome_options)
+    browser = webdriver.Chrome('/Users/gahovichyuliya/PycharmProjects/final_task/chromedriver', chrome_options=chrome_options)
     browser.maximize_window()
     browser.implicitly_wait(5)
     yield browser
