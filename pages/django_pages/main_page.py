@@ -4,7 +4,7 @@ from locators.django_locators.main_page_locator import MainPageLocator
 
 class MainPage(BasePage):
 
-    def open_admin_page(self):
+    def open_login_page(self):
         admin = self.find_element(
             MainPageLocator.LOCATOR_GO_TO_ADMIN_BTN)
         admin.click()
