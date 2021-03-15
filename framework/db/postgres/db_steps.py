@@ -9,11 +9,11 @@ class DBSteps(BaseDBSteps):
             """)
         self.execute(sql)
 
-    def group_id(self):
-        sql = """
-            select name from public.auth_group where name = 'test'
-            """
-        return self.fetch_all(sql)
+    # def group_id(self):
+    #     sql = """
+    #         select name from public.auth_group where name = 'test'
+    #         """
+    #     return self.fetch_all(sql)
 
     def get_user(self):
         sql = """
