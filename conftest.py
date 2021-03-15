@@ -29,5 +29,5 @@ def browser():
     browser.quit()
 
 
-db_steps = DBSteps(DB_URL)
-print(db_steps.get_user_in_group())
+# db_steps = DBSteps(DB_URL)
+# print(db_steps.get_user_in_group())
