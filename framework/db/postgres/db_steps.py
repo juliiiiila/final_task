@@ -21,6 +21,12 @@ class DBSteps(BaseDBSteps):
             """
         return self.fetch_all(sql)
 
+    def check_if_group_exist(self):
+        sql = """
+            select * from public.auth_group where name='test'
+            """
+        return self.fetch_all(sql)
+
     def get_user_in_group(self):
         sql = """
             SELECT aug.id FROM public.auth_user au

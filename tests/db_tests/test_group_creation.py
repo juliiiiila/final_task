@@ -6,7 +6,11 @@ from time import sleep
 
 
 def test_group_create(browser):
-    #db_steps.group_creation()
+    group_exist = db_steps.check_if_group_exist()
+    if group_exist:
+        db_steps.group_delete()
+        print('Group deleted')
+    db_steps.group_creation()
     main_page = MainPage(browser)
     main_page.open_base_page()
     main_page.open_login_page()
